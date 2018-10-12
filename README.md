@@ -1,6 +1,6 @@
-#DAC_ILDA Adaptor
+# DAC_ILDA Adaptor
 #####v 0.1
-##Abstract
+## Abstract
 This tutorial walks you through building a simple DAC_ILDA adaptor for converting audio signals sent from a multi-channel [DAC](http://www.expert-sleepers.co.uk/siwacompatibility.html) (Digital Analog Converter) to an [ILDA Interface](https://www.laserworld.com/en/show-laser-light-faq/glossary-definitions/79-i/1316-ilda-eng.html "ILDA") (International Laser Display Association standard used for laser light systems) to control the XY-axis, RGB and intensity of the beam.
 
 *Warning: This is an amateur guide for interfacing an audio DAC with IDLA. Use at your own (+ laser) risk – each laser spec may have an custom requirements for voltage/frequency limiting needs. Be careful.*
@@ -10,7 +10,7 @@ This tutorial walks you through building a simple DAC_ILDA adaptor for convertin
 
 <div style="page-break-after: always;"></div>
 
-##Requirements
+## Requirements
 ### Adaptor
 - ILDA female connector (DB25)
 - 6x 1/4" balanced (TRS) female jacks
@@ -29,8 +29,8 @@ This tutorial walks you through building a simple DAC_ILDA adaptor for convertin
 
 <div style="page-break-after: always;"></div>
 
-##Instructions
-###1 – Prep
+## Instructions
+### 1 – Prep
 Grab 2x jumper cables per 6x different colors (12x total). Cut them all in half and wirestrip the cut ends. Separate into two piles of female/male, using one for the connector and one for the jacks.
 
 <img src="dac_ilda_images/dac_ilda_jumpers.jpg" width="450" alt="dac_ilda_jumpers">
@@ -64,7 +64,7 @@ Soldering paired color jumper cables to pins:
 
 <img src="dac_ilda_images/dac_ilda_connector.jpg" width="450" alt="dac_ilda_connector">
 
-#####Notes
+##### Notes
 Diagram shows female ILDA connector from *front*, so flip pins horizontally when soldering to the back! I've already made that mistake for you...
 
 Use different colored jumper cables per feature (8 total) to the diagram for easily identifying and patching the jacks to pins.
@@ -75,7 +75,7 @@ I wired jumpers to the Z-Axis pins (11/24), but not yet sure if they're needed.
 
 <div style="page-break-after: always;"></div>
 
-####3 – Jacks
+#### 3 – Jacks
 Solder the opposite end of your jumper cables to the balanced 1/4" jacks, one on the tip and one on the ring. Leave the sleeve (ground) empty for now.
 
 <img src="dac_ilda_images/dac_ilda_jacks.jpg" width="450" alt="dac_ilda_jacks">
@@ -86,12 +86,12 @@ Mount jacks into the box 2 at a time, soldering a common ground wire between all
 
 <div style="page-break-after: always;"></div>
 
-####4 – Switch
+#### 4 – Switch
 Solder 2x jumper cables to the toggle switch, so in the on position they're joined.
 
 <img src="dac_ilda_images/dac_ilda_switch.jpg" width="450" alt="dac_ilda_switch">
 
-####5 – Patch
+#### 5 – Patch
 Feed the ILDA connector and jumper cables into it's cutout slot until snug. Connect the jumper cables, using + (top) of ILDA connector cables to the Tip soldered cable of the jacks. 
 
 Attach the two switch jumpers to Interlock (4 / 17).
@@ -106,7 +106,7 @@ Hook up your DAC » jacks + ILDA » laser and away you go!
 
 <img src="dac_ilda_images/dac_ilda_finalsetup.jpg" width="450" alt="dac_ilda_finalsetup">
 
-##Software
+## Software
 There are plenty of tools for generating a stereo X-Y audio signal from vector graphics, however not all are ready (yet) for all 6 channels of audio (XY + RGB + blanking). Here's a few to check out:
 
 Tool  | Environment | Comment
@@ -118,17 +118,17 @@ Tool  | Environment | Comment
 
 <div style="page-break-after: always;"></div>
 
-##Notes
-###References
+## Notes
+### References
 - [ILDA Connector details from LaserWorld](https://www.laserworld.com/en/laser-projectors-technical-faq/1140-how-is-the-ilda-connector-pinout.html)
 - [ILDA pins details from laserfx.com](http://www.laserfx.com/Backstage.LaserFX.com/Standards/ISP-DB25.html)
 - [Switchcraft TRS Jack Diagram](http://www.switchcraft.com/Documents/12b_cd.pdf)
 
-###Acknowledgements
+### Acknowledgements
 In conversation with Joseph Hyde + Derek Holzer.
 
-###Contribute
+### Contribute
 Something missing? Create an issue on [Github source]().
 
-###Author
+### Author
 cc [teddavis.org](http://teddavis.org) 2018
