@@ -1,5 +1,5 @@
 # DAC_ILDA Adaptor
-##### v 0.1
+##### v 0.1 // [Download PDF](dac_ilda_adaptor.pdf)
 ## Abstract
 This tutorial walks you through building a simple DAC_ILDA adaptor for converting audio signals sent from a multi-channel [DAC](http://www.expert-sleepers.co.uk/siwacompatibility.html) (Digital Analog Converter) to an [ILDA Interface](https://www.laserworld.com/en/show-laser-light-faq/glossary-definitions/79-i/1316-ilda-eng.html "ILDA") (International Laser Display Association standard used for laser light systems) to control the XY-axis, RGB and intensity of the beam.
 
