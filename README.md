@@ -1,5 +1,5 @@
 # DAC_ILDA Adaptor
-##### v 0.1 // [Download PDF](https://github.com/ffd8/dac_ilda/raw/master/dac_ilda_adaptor.pdf)
+##### v 0.1.2 // [Download PDF](https://github.com/ffd8/dac_ilda/raw/master/dac_ilda_adaptor.pdf)
 ## Abstract
 This tutorial walks you through building a simple DAC_ILDA adaptor for converting audio signals sent from a multi-channel [DAC](http://www.expert-sleepers.co.uk/siwacompatibility.html) (Digital Analog Converter) to an [ILDA Interface](https://www.laserworld.com/en/show-laser-light-faq/glossary-definitions/79-i/1316-ilda-eng.html "ILDA") (International Laser Display Association standard used for laser light systems) to control the XY-axis, RGB and intensity of the beam.
 
@@ -55,6 +55,8 @@ Ground   | 25 | Connected to all jacks sleeve
  | | 
 Z-Axis | 11 / 24 | For DMX? See Blanking.
 
+*Note, 'Blanking' seems to be done via RGB values, rather than these ILDA pins.*
+
 ![ILDA Pin-Out Diagram](dac_ilda_images/ILDAserial-RGBpinout.png "ILDA Pin-out digram")
 [ILDA Pinout Source](https://vuo.org/comment/3145#comment-3145)
 
@@ -109,12 +111,22 @@ Hook up your DAC » jacks + ILDA » laser and away you go!
 ## Software
 There are plenty of tools for generating a stereo X-Y audio signal from vector graphics, however not all are ready (yet) for all 6 channels of audio (XY + RGB + blanking). Here's a few to check out:
 
-Tool  | Environment | Comment
-:-------- | :------- | :------
-[XYscope](http://teddavis.org/xyscope/) | Processing | Laser functions pending
-[Vector Synthesis](http://macumbista.net/?page_id=4869)  | PureData | Laser patch planned
-[ReWereHere](http://i.m.klif.tv/rewerehere/) | Max/MSP | 
-[OsciStudio](https://oscilloscopemusic.com/oscistudio.php) | Application |
+#### Laser Specific
+Tool  | Environment | OS | Cost | Realtime
+:-------- | :------- | :------- | :------ | :------
+[LaserBoy](http://laserboy.org) | Application | Windows | Free | -
+[LaserShow- Gen](http://pages.bitlasers.com/lasershowgen/) | Application | MacOS, Windows | Free Limited, $29.90 for Pro | √
+[Spaghetti Laser Show](http://www.spaghettilasershow.com) | Application | Windows | $89.00 | √
+[LWave](https://www.photonlexicon.com/forums...896#post345896) | Application | Windows | Free | -
+ 
+#### Vector to Audio
+
+Tool  | Environment | OS | Cost | Realtime | Laser-Ready
+:-------- | :------- | :------- | :------ | :------ | :------
+[XYscope](http://teddavis.org/xyscope/) | Processing | MacOS, Windows, Linux | Free | √ | √
+[Vector Synthesis](http://macumbista.net/?page_id=4869)  | PureData | MacOS, Windows, Linux | Free | √ | √
+[ReWereHere](http://i.m.klif.tv/rewerehere/) | Max/MSP | MacOS, Windows | Free | √ | √
+[OsciStudio](https://oscilloscopemusic.com/oscistudio.php) | Application | MacOS, Windows | €34 | √ | -
 
 <div style="page-break-after: always;"></div>
 
@@ -123,6 +135,7 @@ Tool  | Environment | Comment
 - [ILDA Connector details from LaserWorld](https://www.laserworld.com/en/laser-projectors-technical-faq/1140-how-is-the-ilda-connector-pinout.html)
 - [ILDA pins details from laserfx.com](http://www.laserfx.com/Backstage.LaserFX.com/Standards/ISP-DB25.html)
 - [Switchcraft TRS Jack Diagram](http://www.switchcraft.com/Documents/12b_cd.pdf)
+- [ILDA Standard Projector](https://www.ilda.com/resources/StandardsDocs/ILDA_ISP99_rev002.pdf)
 
 ### Acknowledgements
 In conversation with Joseph Hyde + Derek Holzer.
