@@ -108,6 +108,8 @@ Hook up your DAC » jacks + ILDA » laser and away you go!
 
 <img src="dac_ilda_images/dac_ilda_finalsetup.jpg" width="450" alt="dac_ilda_finalsetup">
 
+<div style="page-break-after: always;"></div>
+
 ## Software
 There are plenty of tools for generating a stereo X-Y audio signal from vector graphics, however not all are ready (yet) for all 6 channels of audio (XY + RGB + blanking). Here's a few to check out:
 
