@@ -143,7 +143,7 @@ Tool  | Environment | OS | Cost | Realtime | Laser-Ready
 In conversation with Joseph Hyde + Derek Holzer.
 
 ### Contribute
-Something missing? Create an issue on [Github source]().
+Something missing? Create an [issue on Github](https://github.com/ffd8/dac_ilda/issues).
 
 ### Author
-cc [teddavis.org](http://teddavis.org) 2018
+cc [teddavis.org](https://teddavis.org) 2018
