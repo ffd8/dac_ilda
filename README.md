@@ -111,11 +111,11 @@ Hook up your DAC » jacks + ILDA » laser and away you go!
 <div style="page-break-after: always;"></div>
 
 ## Software
-There are plenty of tools for generating a stereo X-Y audio signal from vector graphics, however not all are ready (yet) for all 6 channels of audio (XY + RGB + blanking). Here's a few to check out:
+Here's a few tools to explore – some specific for laser, others for XY vector graphics +/- RGB capabilities:
 
 #### Laser Specific
 Tool  | Environment | OS | Cost | Realtime
-:-------- | :------- | :------- | :------ | :------
+:-------- | :------- | :------- | :------ | :------:
 [LaserBoy](http://laserboy.org) | Application | Windows | Free | -
 [LaserShow- Gen](http://pages.bitlasers.com/lasershowgen/) | Application | MacOS, Windows | Free Limited, $29.90 for Pro | √
 [Spaghetti Laser Show](http://www.spaghettilasershow.com) | Application | Windows | $89.00 | √
@@ -123,8 +123,8 @@ Tool  | Environment | OS | Cost | Realtime
  
 #### Vector to Audio
 
-Tool  | Environment | OS | Cost | Realtime | Laser-Ready
-:-------- | :------- | :------- | :------ | :------ | :------
+Tool  | Environment | OS | Cost | Realtime | Laser
+:-------- | :------- | :------- | :------ | :------: | :------:
 [XYscope](http://teddavis.org/xyscope/) | Processing | MacOS, Windows, Linux | Free | √ | √
 [Vector Synthesis](http://macumbista.net/?page_id=4869)  | PureData | MacOS, Windows, Linux | Free | √ | √
 [ReWereHere](http://i.m.klif.tv/rewerehere/) | Max/MSP | MacOS, Windows | Free | √ | √
