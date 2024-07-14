@@ -128,7 +128,7 @@ Tool  | Environment | OS | Cost | Realtime | Laser
 [XYscope](http://teddavis.org/xyscope/) | Processing | MacOS, Windows, Linux | Free | √ | √
 [Vector Synthesis](http://macumbista.net/?page_id=4869)  | PureData | MacOS, Windows, Linux | Free | √ | √
 [ReWereHere](http://i.m.klif.tv/rewerehere/) | Max/MSP | MacOS, Windows | Free | √ | √
-[OsciStudio](https://oscilloscopemusic.com/oscistudio.php) | Application | MacOS, Windows | €34 | √ | -
+[OsciStudio](https://oscilloscopemusic.com/oscistudio.php) | Application | MacOS, Windows | €34 | √ | √
 
 <div style="page-break-after: always;"></div>
 
